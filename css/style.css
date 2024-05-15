@@ -1,0 +1,20 @@
+ /* Phong cách bổ sung cho Menu Tài Khoản, tránh việc nó bị che giấu bớt bên phải */
+#acc-menu 
+{
+    max-width: 0;
+}
+
+#acc-menu .dropdown-item 
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#acc-menu .dropdown-item .title 
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
